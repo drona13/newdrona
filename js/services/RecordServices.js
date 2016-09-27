@@ -8,8 +8,8 @@ angular.module("personApp").service("RecordServices", ["$http",  function($http)
         console.log("End of response");
         
 
-        object.person= response.data;
-        console.log(object.person);
+        object.Personnames= response.data;
+        console.log(object.Personnames);
     });
     
     
@@ -26,10 +26,10 @@ angular.module("personApp").service("RecordServices", ["$http",  function($http)
         console.log("End of response");
        
         
-        object.Ids= response.data;
+        object.PersonnamesIds= response.data;
         
         
-        console.log(object.personIds);
+        console.log(object.PersonnamesIds);
     });
     
     

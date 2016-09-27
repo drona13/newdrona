@@ -2,7 +2,7 @@
 <html ng-app="personApp">
 <head>
     <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    
 
 </head>
 <body ng-controller="ApprecCtrl">
@@ -10,9 +10,10 @@
     <div>
  <button ng-click="form()">FORM</button>
  <button ng-click="records()">RECORDS</button>
+        
 
 </div>
-        
+    <div record-directives></div>
       
 <form novalidate class="simple-form">
     firstname: <input type="text" ng-model="user.firstname" /><br />

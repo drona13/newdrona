@@ -9,10 +9,10 @@ angular.module('personApp').controller("ApprecCtrl",["$scope", "RecordServices",
         
     };
     {
-    $scope.persontbl="";
+    $scope.Personnames="";
     
  $scope.$watch(function(){
-        return RecordService.persontbl;
+        return RecordService.Personnames;
     },function(newVal, oldVal){
           if (oldVal != newVal){
                 console.log("FROM WATCH LIST, persontbl");
@@ -23,7 +23,7 @@ angular.module('personApp').controller("ApprecCtrl",["$scope", "RecordServices",
               
                 console.log(oldVal);
               
-               $scope.person=newVal;
+               $scope.Personnames=newVal;
             }
         
         
@@ -33,7 +33,7 @@ angular.module('personApp').controller("ApprecCtrl",["$scope", "RecordServices",
     
     
       $scope.$watch(function(){
-        return RecordService.PersonIds;
+        return RecordService.PersonnamesIds;
     },function(newVal, oldVal){
           if (oldVal != newVal){
                 console.log("FROM WATCH LIST, Persontbl");
@@ -42,7 +42,7 @@ angular.module('personApp').controller("ApprecCtrl",["$scope", "RecordServices",
                 console.log("OLD VAL, Persontbl");
                 console.log(oldVal);
               
-               $scope.PersonIds=newVal;
+               $scope.PersonnamesIds=newVal;
             }
         
         
