@@ -80,57 +80,6 @@ app.get( "/service/persontbl/:id",function(req, res, next){
 
 
 
-//app.get("/service/inventory",function(req, res, next){
-//   //arrays to store dynamic parameters
-//    
-//    
-//    var query = "SELECT * FROM inventory";
-//    req.getConnection(function(err, connection){
-//       if(err) return next(err);
-//        
-//        connection.query(query, function(err, results){
-//           if(err){
-//               console.log(err);
-//               return next("Mysql error, check your query");
-//           } 
-//            res.json(results);
-//            console.log(results);
-//            
-//        });
-//        
-//        
-//    });
-//    
-//    
-//});
-//
-//app.get( "/service/inventory/:inventorytype_id",function(req, res, next){
-//   //arrays to store dynamic parameters
-//    var inventorytype_ids =[];
-//    var inventorytype_id=req.params.inventorytype_id;
-//    inventorytype_ids.push(inventorytype_id);
-//    
-//    var query = "SELECT * FROM inventory WHERE inventorytype_id = ?";
-//    req.getConnection(function(err, connection){
-//       if(err) return next(err);
-//        
-//        connection.query(query, inventorytype_ids, function(err, results){
-//           if(err){
-//               console.log(err);
-//               return next("Mysql error, check your query");
-//           } 
-//            res.json(results);
-//            
-//        });
-//        
-//        
-//    });
-//    
-//    
-//});
-//
-
-
 
 
 //routing

@@ -1,0 +1,38 @@
+<!DOCtype>
+<html ng-app="personApp">
+<head>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+
+</head>
+<body ng-controller="ApprecCtrl">
+   
+    <div>
+ <button ng-click="form()">FORM</button>
+ <button ng-click="records()">RECORDS</button>
+
+</div>
+        
+      
+<form novalidate class="simple-form">
+    firstname: <input type="text" ng-model="user.firstname" /><br />
+    lastname: <input type="text" ng-model="user.lastname" /><br />
+    address: <input type="text" ng-model="user.address" /><br />
+    phonenumber: <input type="text" ng-model="user.phonenumber" /><br />
+    <input type="button" ng-click="reset()" value="Reset" />
+    <input type="submit" ng-click="update(user)" value="Submit" />
+  </form>
+ 
+    
+<script type="text/javascript" src="/node_modules/angular/angular.js"></script>
+<script type="text/javascript" src="/node_modules/angular-route/angular-route.js"></script>
+<script type="text/javascript" src="/js/personApp.js"></script>
+<script type="text/javascript" src="/js/controllers/ApprecCtrl.js"></script>
+<script type="text/javascript" src="/js/services/RecordServices.js"></script>
+<script type="text/javascript" src="/js/directives/RecordDirectives.js"></script>    
+
+
+
+
+</body>
+</html>
